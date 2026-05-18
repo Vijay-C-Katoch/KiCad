@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "3c931028-b86c-4349-a020-f647864dc795")
 	(paper "A4")
+	(title_block
+		(title "Basic STM32")
+		(date "2026-05-18")
+		(rev "0.1")
+	)
 	(lib_symbols)
 	(sheet
 		(at 3.81 508)

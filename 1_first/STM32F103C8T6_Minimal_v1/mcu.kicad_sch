@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "053a8ec9-1443-4306-a349-24b6e4a55d1f")
 	(paper "A4")
+	(title_block
+		(title "Basic STM32")
+		(date "2026-05-18")
+		(rev "0.1")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x06"
 			(pin_names
@@ -4014,6 +4019,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 93.98) (xy 163.83 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af0fe2f1-5019-4d99-9ee5-4ace2ccec262")
+	)
+	(wire
+		(pts
 			(xy 144.78 74.93) (xy 144.78 78.74)
 		)
 		(stroke
@@ -4264,6 +4279,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 91.44) (xy 163.83 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee84680d-3eca-46e0-a349-d68096d08864")
+	)
+	(wire
+		(pts
 			(xy 163.83 38.1) (xy 163.83 44.45)
 		)
 		(stroke
@@ -4431,6 +4456,54 @@
 			(justify left bottom)
 		)
 		(uuid "c102bd7a-42df-4295-afb4-9903624eabee")
+	)
+	(global_label "PA12"
+		(shape input)
+		(at 163.83 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "004a97e7-47b8-4579-b647-6f2550d7db38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.5928 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PA11"
+		(shape input)
+		(at 163.83 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7f0168d8-76a2-43ae-bda9-51de2eb38f37")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.5928 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
