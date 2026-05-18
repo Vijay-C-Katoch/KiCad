@@ -1221,7 +1221,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AMS1117"
+		(symbol "Regulator_Linear:AMS1117CD-3.3"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1237,7 +1240,7 @@
 					)
 				)
 			)
-			(property "Value" "AMS1117"
+			(property "Value" "AMS1117CD-3.3"
 				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1248,7 +1251,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2"
 				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1270,7 +1273,7 @@
 					)
 				)
 			)
-			(property "Description" "1A Low Dropout regulator, positive, adjustable output, SOT-223"
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, TO-252"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1281,7 +1284,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo adjustable positive"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1292,7 +1295,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "ki_fp_filters" "TO?252*TabPin2*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1303,7 +1306,7 @@
 					)
 				)
 			)
-			(symbol "AMS1117_0_1"
+			(symbol "AMS1117CD-3.3_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end 5.08 1.905)
@@ -1316,11 +1319,11 @@
 					)
 				)
 			)
-			(symbol "AMS1117_1_1"
-				(pin input line
+			(symbol "AMS1117CD-3.3_1_1"
+				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
-					(name "ADJ"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1803,12 +1806,6 @@
 		(uuid "64d9848f-5e2f-4212-9d00-74144223a79f")
 	)
 	(junction
-		(at 154.94 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d9fdc0e-39aa-47a3-917e-9eed8b7bc374")
-	)
-	(junction
 		(at 162.56 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1927,6 +1924,16 @@
 			(type default)
 		)
 		(uuid "3f70acfc-8160-4569-a279-26dfc5b1cf88")
+	)
+	(wire
+		(pts
+			(xy 147.32 83.82) (xy 147.32 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "479bed34-d452-4bfa-a95c-231e3a805e52")
 	)
 	(wire
 		(pts
@@ -2197,16 +2204,6 @@
 			(type default)
 		)
 		(uuid "e58c8f4c-15b8-40bb-b713-d33b3ca8a75b")
-	)
-	(wire
-		(pts
-			(xy 153.67 76.2) (xy 154.94 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e600525c-619e-41a0-9454-315d83661961")
 	)
 	(wire
 		(pts
@@ -2892,6 +2889,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117CD-3.3")
+		(at 147.32 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "987eb05c-cc9e-4fb7-b803-8081ef3742a5")
+		(property "Reference" "U1"
+			(at 147.32 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117CD-3.3"
+			(at 147.32 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2"
+			(at 147.32 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 149.86 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, TO-252"
+			(at 147.32 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3c740004-10c4-4e32-af96-82c04dedbb41")
+		)
+		(pin "3"
+			(uuid "aa15e0a4-cdf5-4b05-8d8b-abd45895e2f6")
+		)
+		(pin "1"
+			(uuid "2faa6e29-45e5-4322-9eb2-e9179bf57980")
+		)
+		(instances
+			(project "STM32F103C8T6_Minimal_v1"
+				(path "/3c931028-b86c-4349-a020-f647864dc795/e91e4c49-75cf-4dfe-9423-8ac944298d95"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 179.07 88.9 0)
 		(unit 1)
@@ -3307,89 +3387,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AMS1117")
-		(at 147.32 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d653ff11-60de-445c-baad-a1414259d006")
-		(property "Reference" "U1"
-			(at 147.32 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117"
-			(at 147.32 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 147.32 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 149.86 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, adjustable output, SOT-223"
-			(at 147.32 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "3c459d1e-fe7b-4e24-b2f0-c6abdd338de3")
-		)
-		(pin "1"
-			(uuid "3e90a9c1-55b8-4bfb-ab9d-8e1b9b93b6fa")
-		)
-		(pin "2"
-			(uuid "26937196-0505-45fc-b23a-b3dab7a7973f")
-		)
-		(instances
-			(project "STM32F103C8T6_Minimal_v1"
-				(path "/3c931028-b86c-4349-a020-f647864dc795/e91e4c49-75cf-4dfe-9423-8ac944298d95"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 162.56 68.58 0)
 		(unit 1)
@@ -3700,6 +3697,84 @@
 			(project "STM32F103C8T6_Minimal_v1"
 				(path "/3c931028-b86c-4349-a020-f647864dc795/e91e4c49-75cf-4dfe-9423-8ac944298d95"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 147.32 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f71a6710-ea12-4561-b10e-9023344e0341")
+		(property "Reference" "#PWR025"
+			(at 147.32 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 147.32 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 147.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "636ef6a5-01e8-4127-972d-566d283c5c8e")
+		)
+		(instances
+			(project "STM32F103C8T6_Minimal_v1"
+				(path "/3c931028-b86c-4349-a020-f647864dc795/e91e4c49-75cf-4dfe-9423-8ac944298d95"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
