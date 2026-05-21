@@ -19,27 +19,29 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J2"
-				(at 0 12.7 0)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "USB_B_Micro"
-				(at 0 10.16 0)
+				(at -5.08 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Connector_USB:USB_Micro-B_Molex-105133-0001"
+			(property "Footprint" ""
 				(at 3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -341,7 +343,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_out line
 					(at 0 -10.16 90)
 					(length 2.54)
 					(name "GND"
@@ -1892,12 +1894,6 @@
 		(uuid "d68ea2f9-d24b-4dd2-9159-2ada4698a073")
 	)
 	(junction
-		(at 111.76 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bb03e3f-95ee-4dab-9b23-3e234a007b5e")
-	)
-	(junction
 		(at 130.81 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1916,6 +1912,12 @@
 		(uuid "40f30ccb-42f4-438b-a2e6-034bbed1761b")
 	)
 	(junction
+		(at 111.76 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d268e72-276a-4836-8827-edb7cb19b767")
+	)
+	(junction
 		(at 179.07 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1932,6 +1934,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9dd35076-9d37-4ae1-a7d9-9aaf4ece5a78")
+	)
+	(junction
+		(at 147.32 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5fce593-b9f1-43ef-ad6c-2e2377adb8d6")
 	)
 	(junction
 		(at 179.07 76.2)
@@ -2043,16 +2051,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 83.82) (xy 147.32 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "479bed34-d452-4bfa-a95c-231e3a805e52")
-	)
-	(wire
-		(pts
 			(xy 162.56 68.58) (xy 162.56 76.2)
 		)
 		(stroke
@@ -2113,7 +2111,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 101.6) (xy 162.56 101.6)
+			(xy 130.81 101.6) (xy 147.32 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2183,6 +2181,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 101.6) (xy 162.56 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "750a836a-e30e-4deb-9d5c-88c117f73ece")
+	)
+	(wire
+		(pts
 			(xy 130.81 92.71) (xy 130.81 101.6)
 		)
 		(stroke
@@ -2200,6 +2208,16 @@
 			(type default)
 		)
 		(uuid "7add1316-4f61-416f-807f-5c8f62838d88")
+	)
+	(wire
+		(pts
+			(xy 147.32 83.82) (xy 147.32 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cee5722-c2c3-4f49-bf4f-f50520350f0e")
 	)
 	(wire
 		(pts
@@ -2293,7 +2311,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 101.6) (xy 111.76 111.76)
+			(xy 111.76 101.6) (xy 111.76 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3670,7 +3688,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 111.76 0)
+		(at 111.76 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3681,7 +3699,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9b85ac8-f621-4a1c-ba81-d2851fcd22e5")
 		(property "Reference" "#PWR01"
-			(at 111.76 118.11 0)
+			(at 111.76 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3692,7 +3710,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 116.84 0)
+			(at 111.76 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3702,7 +3720,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 111.76 0)
+			(at 111.76 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3713,7 +3731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 111.76 0)
+			(at 111.76 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3724,7 +3742,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 111.76 0)
+			(at 111.76 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3901,84 +3919,6 @@
 			(project "STM32F103C8T6_Minimal_v1"
 				(path "/3c931028-b86c-4349-a020-f647864dc795/e91e4c49-75cf-4dfe-9423-8ac944298d95"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 147.32 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f71a6710-ea12-4561-b10e-9023344e0341")
-		(property "Reference" "#PWR025"
-			(at 147.32 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 147.32 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "636ef6a5-01e8-4127-972d-566d283c5c8e")
-		)
-		(instances
-			(project "STM32F103C8T6_Minimal_v1"
-				(path "/3c931028-b86c-4349-a020-f647864dc795/e91e4c49-75cf-4dfe-9423-8ac944298d95"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)

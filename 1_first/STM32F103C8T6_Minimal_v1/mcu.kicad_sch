@@ -20,29 +20,27 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J1"
-				(at 2.54 0.0001 0)
+			(property "Reference" "J"
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "Conn_01x06"
-				(at 2.54 -2.5399 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3344,12 +3342,6 @@
 		(uuid "00b4f996-2241-4092-bb27-c4f22c7fb842")
 	)
 	(junction
-		(at 113.03 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11a93f30-eb62-43ff-aa05-bd911893fa0d")
-	)
-	(junction
 		(at 118.11 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3360,12 +3352,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "234c8764-2db2-4f3b-be76-c4d4c43d4e4a")
-	)
-	(junction
-		(at 104.14 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2e1eda5c-2678-498a-b4a3-437e8e799a0a")
 	)
 	(junction
 		(at 104.14 30.48)
@@ -3837,7 +3823,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 30.48) (xy 113.03 38.1)
+			(xy 113.03 30.48) (xy 113.03 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3904,16 +3890,6 @@
 			(type default)
 		)
 		(uuid "68f18c4f-2c4a-403a-a0bc-29afb1380cf0")
-	)
-	(wire
-		(pts
-			(xy 104.14 38.1) (xy 113.03 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b9b45ea-b32e-4af4-8367-3e7151b5fb9a")
 	)
 	(wire
 		(pts
@@ -4354,16 +4330,6 @@
 			(type default)
 		)
 		(uuid "d8902e9d-022a-4638-86d9-5fe4c87960f8")
-	)
-	(wire
-		(pts
-			(xy 113.03 38.1) (xy 113.03 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de5711d1-3ba7-47ea-9f9b-e7e0a3c98f92")
 	)
 	(wire
 		(pts
